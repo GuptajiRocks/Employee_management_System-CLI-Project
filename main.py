@@ -54,16 +54,16 @@ print()
 
 time.sleep(2)
 
-#speak('Some basic instructions before the program starts')
+speak('Some basic instructions before the program starts')
 time.sleep(ns)
 
-#speak('Please do install the following python modules before running this program')
+speak('Please do install the following python modules before running this program')
 time.sleep(1)
 
-#speak('pandas')
-#speak('matplotlib')
-#speak('p y t t s x 3')
-#speak('pyaudio')
+speak('pandas')
+speak('matplotlib')
+speak('p y t t s x 3')
+speak('pyaudio')
 
 
 #Starting of the master loop.
@@ -88,7 +88,7 @@ while True:
 
     if choice == 1:
         #The user chooses 1, the CSV is read and stored in the variable 'file'.
-        file = pd.read_csv('true.csv') #The main DataFrame variable that is to be used via the whole project.
+        file = pd.read_csv('final.csv') #The main DataFrame variable that is to be used via the whole project.
         print(file)
 
         #Checking that if the CSV is read properly or not...
@@ -292,7 +292,7 @@ Press 2 : TO DELETE MULTIPLE COLUMNS''')
                 print()
                 print('Printing the Highest Work Experience')
                 print()
-                column = file['Years of Service']
+                column = file['EXP']
                 print(column.max())
                 print()
                 print()
@@ -440,7 +440,7 @@ Press 2: To plot Histogram of all Numeric columns in the DataFrame''')
 
                     plt.hist(x = file[damn])
 
-                    plt.xticks(rotation = 0)
+                    plt.xticks(rotation = 90)
                     plt.title('HISTOGRAM')
                     plt.xlabel('X-Axis')
                     plt.ylabel('Y-Axis')
@@ -459,6 +459,7 @@ Press 2: To plot Histogram of all Numeric columns in the DataFrame''')
                     print()
 
                     file.hist(grid = False)
+                    plt.xticks(rotation = 90)
 
                     plt.show()
 
