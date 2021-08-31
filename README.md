@@ -7,5 +7,3 @@ The Source Code Zip needs to be downloaded and before running the program the fo
 2. Numpy (pip install numpy)
 3. Matplotlib (pip install matplotlib)
 4. pyttsx3 (pip install pyttsx3)
-5. webbrowser (pip install webbrowser)
-6. time (pip install time)
