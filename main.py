@@ -88,7 +88,7 @@ while True:
 
     if choice == 1:
         #The user chooses 1, the CSV is read and stored in the variable 'file'.
-        file = pd.read_csv('final.csv') #The main DataFrame variable that is to be used via the whole project.
+        file = pd.read_csv('true.csv') #The main DataFrame variable that is to be used via the whole project.
         print(file)
 
         #Checking that if the CSV is read properly or not...
