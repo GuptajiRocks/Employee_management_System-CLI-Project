@@ -208,7 +208,7 @@ while True:
                 num1 = len(file.index)
                 listval = []
                 for i in range(num1):
-                    val = str(input('Enter the Value: ')) #Variable asking the user to insert values of the the corresponding records in the column
+                    val = eval(input('Enter the Value: ')) #Variable asking the user to insert values of the the corresponding records in the column
                     listval.append(val)
                 file[ncne] = listval
                 #Creating the new column in dataframe
